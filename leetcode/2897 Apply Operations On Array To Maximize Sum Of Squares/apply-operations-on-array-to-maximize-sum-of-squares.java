@@ -18,16 +18,15 @@ class Solution {
         long sum=0;
         int mod=(int)1e9+7;
         for(int i=0;i<k;i++){
-            long curr=0;
+            int curr=0;
             for(int bit=0;bit<31;bit++){
                 if(count[bit]!=0){
                     count[bit]--;
                     curr|=1<<bit;
                 }
             }
-            sum=(sum+curr*curr)%mod;
+            sum=(sum+1l*curr*curr)%mod;
         }
         return (int)sum;
     }
-        //fjdihfis
 }
