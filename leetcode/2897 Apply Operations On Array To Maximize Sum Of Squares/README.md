@@ -59,10 +59,8 @@ It can be shown that this is the maximum value we can get.
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `32
-ms` | - |
-| **Memory** | `80.17
-MB` | - |
+| **Runtime** | `N/A` | - |
+| **Memory** | `N/A` | - |
 
 ---
 
