@@ -2,10 +2,8 @@
  * Problem: 2897. Apply Operations on Array to Maximize Sum of Squares
  * Difficulty: Hard
  * Language: Java
- * Runtime: 32
-ms
- * Memory: 80.17
-MB
+ * Runtime: N/A
+ * Memory: N/A
  * LeetCode: https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/
  */
 
@@ -31,4 +29,5 @@ class Solution {
         }
         return (int)sum;
     }
+        //fjdihfis
 }
