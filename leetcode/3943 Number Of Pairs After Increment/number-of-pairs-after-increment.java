@@ -2,8 +2,8 @@
  * Problem: 3943. Number of Pairs After Increment
  * Difficulty: Hard
  * Language: Java
- * Runtime: 2319 ms
- * Memory: 231 MB
+ * Runtime: 2275 ms
+ * Memory: 230.9 MB
  * LeetCode: https://leetcode.com/problems/number-of-pairs-after-increment/
  */
 
@@ -20,4 +20,4 @@ class Solution {
         int[]decomposition=new int[sqrt];
         List<Integer>res=new ArrayList<>();
         HashMap<Long,Integer>map[]=new HashMap[sqrt];
-        for(int i=0;i<sqrt;i
+        for(int
