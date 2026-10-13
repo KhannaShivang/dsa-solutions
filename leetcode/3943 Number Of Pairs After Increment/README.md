@@ -88,8 +88,8 @@ Return an integer array `answer`, where `answer[j]` is the number of pairs for t
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `53 ms` | - |
-| **Memory** | `N/A` | - |
+| **Runtime** | `2319 ms` | - |
+| **Memory** | `231 MB` | - |
 
 ---
 
