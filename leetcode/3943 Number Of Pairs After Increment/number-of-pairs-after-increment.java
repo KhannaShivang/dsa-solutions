@@ -2,34 +2,27 @@
  * Problem: 3943. Number of Pairs After Increment
  * Difficulty: Hard
  * Language: Java
- * Runtime: 0 ms
+ * Runtime: 53 ms
  * Memory: N/A
  * LeetCode: https://leetcode.com/problems/number-of-pairs-after-increment/
  */
 
-ms2[x],map.get(nums2[x])-1);
-                    nums2[x]+=val;
-                    map.put(nums2[x],map.getOrDefault(nums2[x],0)+1);
-                    x++;
+int tot=q[1];
+                int pairs=0;
+                for(long num:nums1){
+                    for(int i=0;i<sqrt;i++){
+                        long curr=tot-num-decomposition[i];
+                        pairs+=map[i].getOrDefault(curr,0);
+                    }
                 }
-                limit=Math.max(x,(y+1)/sqrt*sqrt);
-                while(y>=limit){
-                    map.put(nums2[y],map.get(nums2[y])-1);
-                    nums2[y]+=val;
-                    map.put(nums2[y],map.getOrDefault(nums2[y],0)+1);
-                    y--;
-                }
-                if(x>y)continue;
-                for(int i=x/sqrt;i<=y/sqrt;i++){
-                    decomposition[i]+=val;
-                }
+                res.add(pairs);
             }
-            else{
-                int tot=q[1];
-                for(int i=0;i<sqrt;i++){
-                    if(decomposition[i]!=0){
-                        for(int j=0;j<sqrt;j++){
-                            int idx=i*sqrt+j;
-                            if(idx==n)break;
-                            map.put(nums2[idx],map.get(nums2[idx])-1);
-                            nu
+        }
+        n=res.size();
+        int[]ans=new int[n];
+        for(int i=0;i<n;i++){
+            ans[i]=res.get(i);
+        }
+        return ans;
+    }
+}
