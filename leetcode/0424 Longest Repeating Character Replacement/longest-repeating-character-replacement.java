@@ -7,8 +7,7 @@
  * LeetCode: https://leetcode.com/problems/longest-repeating-character-replacement/
  */
 
-class Solution {
-    public int characterReplacement(String s, int k) {
+int k) {
         int n=s.length();
         int[][]letterScore=new int[26][n];
         for(int i=0;i<n;i++){
@@ -16,7 +15,7 @@ class Solution {
             letterScore[letter][i]=1;
         }
         int max=0;
-        for(int i=0;i<n;i++){
+        for(int i=0;i<26;i++){
             int left=0;
             int count=0;
             for(int right=0;right<n;right++){
