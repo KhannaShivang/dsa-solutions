@@ -61,10 +61,8 @@ The alternating score is calculated as:
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `34
-ms` | - |
-| **Memory** | `126.01
-MB` | - |
+| **Runtime** | `N/A` | - |
+| **Memory** | `N/A` | - |
 
 ---
 
