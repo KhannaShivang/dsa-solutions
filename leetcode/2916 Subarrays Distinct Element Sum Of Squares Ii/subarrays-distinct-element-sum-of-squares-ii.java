@@ -7,18 +7,7 @@
  * LeetCode: https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/
  */
 
-this.n=n;
-        this.N=4*n;
-        sum=new int[N];
-        squareSum=new int[N];
-        lazy=new int[N];
-    }
-    public void rangeUpdate(int s,int e){
-        rangeUpdate(0,0,n-1,s,e);
-    }
-    private void rangeUpdate(int idx,int l,int r,int s,int e){
-        if(lazy[idx]!=0){
-            squareSum[idx]+=2*lazy[idx]*sum[idx]+(r-l+1)*lazy[idx]*lazy[idx];
+dx]*sum[idx]+(r-l+1)*lazy[idx]*lazy[idx];
             sum[idx]+=(r-l+1)*lazy[idx];
             if(l!=r){
                 lazy[2*idx+1]+=lazy[idx];
@@ -41,4 +30,15 @@ this.n=n;
         int c2=2*idx+2;
         rangeUpdate(c1,l,mid,s,e);
         rangeUpdate(c2,mid+1,r,s,e);
-        squareSum[idx]=square
+        squareSum[idx]=squareSum[c1]+squareSum[c2];
+        sum[idx]=sum[c1]+sum[c2];
+    }
+}
+class Solution {
+    public int sumCounts(int[] nums) {
+        long res=0;
+        int mod=(int)1e9+7;
+        HashMap<Integer,Integer>lastIdx=new HashMap<>();
+        int n=nums.length;
+        SegmentTree tree=new SegmentTree(n);
+        for(int i=0;i<n;i
