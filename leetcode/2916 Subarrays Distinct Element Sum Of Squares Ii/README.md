@@ -64,7 +64,7 @@ The sum of the squares of the distinct counts in all subarrays is equal to 12 + 
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `0 ms` | - |
+| **Runtime** | `N/A` | - |
 | **Memory** | `N/A` | - |
 
 ---
