@@ -13,6 +13,7 @@ class Solution {
         int score=0;
         if(k>=n)return Arrays.stream(nums).max().getAsInt();
         for(int i=0;i<n;){
+            if(score==k)return nums[i];
             int idx=i;
             while(nums[++i%n]<nums[idx]){
                 score++;
