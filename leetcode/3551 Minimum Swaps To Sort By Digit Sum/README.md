@@ -77,10 +77,8 @@ A **swap** is defined as exchanging the values at two distinct positions in the 
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `242
-ms` | - |
-| **Memory** | `116.02
-MB` | - |
+| **Runtime** | `N/A` | - |
+| **Memory** | `N/A` | - |
 
 ---
 
