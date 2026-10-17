@@ -2,8 +2,10 @@
  * Problem: 3551. Minimum Swaps to Sort by Digit Sum
  * Difficulty: Medium
  * Language: Java
- * Runtime: N/A
- * Memory: N/A
+ * Runtime: 242
+ms
+ * Memory: 116.02
+MB
  * LeetCode: https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/
  */
 
