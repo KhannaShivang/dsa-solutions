@@ -2,8 +2,10 @@
  * Problem: 3942. Minimum Operations to Sort a Permutation
  * Difficulty: Medium
  * Language: Java
- * Runtime: N/A
- * Memory: N/A
+ * Runtime: 3
+ms
+ * Memory: 94.60
+MB
  * LeetCode: https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/
  */
 
