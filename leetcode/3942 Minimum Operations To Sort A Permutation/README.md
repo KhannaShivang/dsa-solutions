@@ -77,8 +77,10 @@ It is impossible to reach `[2, 0, 1, 3]`. Thus, the answer is -1.
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
-| **Memory** | `N/A` | - |
+| **Runtime** | `3
+ms` | - |
+| **Memory** | `94.60
+MB` | - |
 
 ---
 
