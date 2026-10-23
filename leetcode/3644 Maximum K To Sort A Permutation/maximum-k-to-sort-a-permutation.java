@@ -10,18 +10,11 @@
 class Solution {
     public int sortPermutation(int[] nums) {
         int n=nums.length;
-        int low=0;
-        int high=n;
-        Integer[]idx=new Integer[n];
-        for(int i=0;i<n;i++){
-            idx[i]=i;
-        }
-        Arrays.sort(idx,(a,b)->nums[a]-nums[b]);
         int res=n;
         for(int i=0;i<n;i++){
-            if(i!=idx[i]){
+            if(i!=nums[i]){
                 if(res==n)res=nums[i];
-                res&=nums[i]&nums[idx[i]];
+                else res&=nums[i];
             }
         }
         if(res==n)return 0;
