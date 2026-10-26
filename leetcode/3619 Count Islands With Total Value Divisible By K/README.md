@@ -62,8 +62,10 @@ The grid contains six islands, each with a total value that is divisible by 3.
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
-| **Memory** | `N/A` | - |
+| **Runtime** | `0
+ms` | - |
+| **Memory** | `0.00
+MB` | - |
 
 ---
 
