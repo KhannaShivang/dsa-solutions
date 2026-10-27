@@ -79,7 +79,7 @@ The only valid path is: `(0,0) &rarr; (0,1) &rarr; (0,2) &rarr; (0,3)`
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `0 ms` | - |
+| **Runtime** | `N/A` | - |
 | **Memory** | `N/A` | - |
 
 ---
