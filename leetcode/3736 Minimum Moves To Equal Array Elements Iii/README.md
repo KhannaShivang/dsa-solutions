@@ -66,9 +66,9 @@ Now, all elements of `nums` are equal to 5. The minimum total moves is `2`.
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `1
+| **Runtime** | `2
 ms` | - |
-| **Memory** | `45.53
+| **Memory** | `45.95
 MB` | - |
 
 ---
