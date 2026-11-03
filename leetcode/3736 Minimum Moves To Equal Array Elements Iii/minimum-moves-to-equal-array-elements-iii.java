@@ -2,25 +2,18 @@
  * Problem: 3736. Minimum Moves to Equal Array Elements III
  * Difficulty: Easy
  * Language: Java
- * Runtime: N/A
- * Memory: N/A
+ * Runtime: 1
+ms
+ * Memory: 45.53
+MB
  * LeetCode: https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/
  */
 
-class Solution {
-    public int minMoves(int[] nums) {
-        int max=nums[0];
-        int n=nums.length;
-        int moves=0;
-        for(int i=1;i<n;i++){
-            if(nums[i]>max){
-                moves+=i*(nums[i]-max);
-                max=nums[i];
-            }
-            else{
-                moves+=max-nums[i];
-            }
-        }
-        return moves;
-    }
-}
+[1]
+[7,7,7,7,7]
+[1,100]
+[9,1,9,3,9,5]
+[10,9,8,7,6,5,4,3,2,1]
+[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40]
+[100,1,99,2,98,3,97,4,96,5,95,6,94,7,93,8,92,9,91,10,90,11,89,12,88,13,87,14,86,15,85,16,84,17,83,18,82,19,81,20,80,21,79,22,78,23,77,24,76,25,75,26,74,27,73,28,72,29,71,30]
+[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,100]
