@@ -71,7 +71,7 @@ Explanation: Events in chronological order go as follows:
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `29 ms` | - |
+| **Runtime** | `N/A` | - |
 | **Memory** | `N/A` | - |
 
 ---
