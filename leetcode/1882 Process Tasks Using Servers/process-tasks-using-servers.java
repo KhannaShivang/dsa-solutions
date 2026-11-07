@@ -19,22 +19,26 @@
 10        PriorityQueue<int[]>serversInUse=new PriorityQueue<>((a,b)->a[1]-b[1]);
 11        Queue<Integer>queue=new LinkedList<>();
 12        int time=0;
-13        while(time<n||!queue.isEmpty()){
-14            while(!serversInUse.isEmpty()&&serversInUse.peek()[1]<=time){
-15                int idx=serversInUse.poll()[0];
-16                freeServers.offer(new int[]{idx,servers[idx]});
-17            }
-18            if(time<n){
-19                queue.offer(time);
-20            }
-21            while(!queue.isEmpty()&&!freeServers.isEmpty()){
-22                int[]curr=freeServers.poll();
-23                int idx=queue.poll();
-24                res[idx]=curr[0];
-25                serversInUse.offer(new int[]{curr[0],time+tasks[idx]});
-26            }
-27            time++;
-28        }
-29        return res;
-30    }
-31}
+13        int taskIndex=0;
+14        while(taskIndex<n||!queue.isEmpty()){
+15            while(!serversInUse.isEmpty()&&serversInUse.peek()[1]<=time){
+16                int idx=serversInUse.poll()[0];
+17                freeServers.offer(new int[]{idx,servers[idx]});
+18            }
+19            while(taskIndex<n&&taskIndex<=time){
+20                queue.offer(taskIndex++);
+21            }
+22            while(!queue.isEmpty()&&!freeServers.isEmpty()){
+23                int[]curr=freeServers.poll();
+24                int idx=queue.poll();
+25                res[idx]=curr[0];
+26                serversInUse.offer(new int[]{curr[0],time+tasks[idx]});
+27            }
+28            if(!queue.isEmpty()&&freeServers.isEmpty()){
+29                time=serversInUse.peek()[1];
+30            }
+31            else time++;
+32        }
+33        return res;
+34    }
+35}
