@@ -2,43 +2,43 @@
  * Problem: 1882. Process Tasks Using Servers
  * Difficulty: Medium
  * Language: Java
- * Runtime: 29 ms
+ * Runtime: N/A
  * Memory: N/A
  * LeetCode: https://leetcode.com/problems/process-tasks-using-servers/
  */
 
-class Solution {
-    public int[] assignTasks(int[] servers, int[] tasks) {
-        int m=servers.length;
-        int n=tasks.length;
-        PriorityQueue<int[]>freeServers=new PriorityQueue<>((a,b)->a[1]==b[1]?a[0]-b[0]:a[1]-b[1]);
-        for(int i=0;i<m;i++){
-            freeServers.offer(new int[]{i,servers[i]});
-        }
-        int[]res=new int[n];
-        PriorityQueue<int[]>serversInUse=new PriorityQueue<>((a,b)->a[1]-b[1]);
-        Queue<Integer>queue=new LinkedList<>();
-        int time=0;
-        int taskIndex=0;
-        while(taskIndex<n||!queue.isEmpty()){
-            while(!serversInUse.isEmpty()&&serversInUse.peek()[1]<=time){
-                int idx=serversInUse.poll()[0];
-                freeServers.offer(new int[]{idx,servers[idx]});
-            }
-            while(taskIndex<n&&taskIndex<=time){
-                queue.offer(taskIndex++);
-            }
-            while(!queue.isEmpty()&&!freeServers.isEmpty()){
-                int[]curr=freeServers.poll();
-                int idx=queue.poll();
-                res[idx]=curr[0];
-                serversInUse.offer(new int[]{curr[0],time+tasks[idx]});
-            }
-            if(!queue.isEmpty()&&freeServers.isEmpty()){
-                time=serversInUse.peek()[1];
-            }
-            else time++;
-        }
-        return res;
-    }
-}
+1class Solution {
+2    public int[] assignTasks(int[] servers, int[] tasks) {
+3        int m=servers.length;
+4        int n=tasks.length;
+5        PriorityQueue<int[]>freeServers=new PriorityQueue<>((a,b)->a[1]==b[1]?a[0]-b[0]:a[1]-b[1]);
+6        for(int i=0;i<m;i++){
+7            freeServers.offer(new int[]{i,servers[i]});
+8        }
+9        int[]res=new int[n];
+10        PriorityQueue<int[]>serversInUse=new PriorityQueue<>((a,b)->a[1]-b[1]);
+11        Queue<Integer>queue=new LinkedList<>();
+12        int time=0;
+13        int taskIndex=0;
+14        while(taskIndex<n||!queue.isEmpty()){
+15            while(!serversInUse.isEmpty()&&serversInUse.peek()[1]<=time){
+16                int idx=serversInUse.poll()[0];
+17                freeServers.offer(new int[]{idx,servers[idx]});
+18            }
+19            while(taskIndex<n&&taskIndex<=time){
+20                queue.offer(taskIndex++);
+21            }
+22            while(!queue.isEmpty()&&!freeServers.isEmpty()){
+23                int[]curr=freeServers.poll();
+24                int idx=queue.poll();
+25                res[idx]=curr[0];
+26                serversInUse.offer(new int[]{curr[0],time+tasks[idx]});
+27            }
+28            if(!queue.isEmpty()&&freeServers.isEmpty()){
+29                time=serversInUse.peek()[1];
+30            }
+31            else time++;
+32        }
+33        return res;
+34    }
+35}
