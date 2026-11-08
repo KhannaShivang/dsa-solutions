@@ -64,7 +64,7 @@ Explanation: The two servers in the first row can communicate with each other. T
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
+| **Runtime** | `2ms` | - |
 | **Memory** | `N/A` | - |
 
 ---
