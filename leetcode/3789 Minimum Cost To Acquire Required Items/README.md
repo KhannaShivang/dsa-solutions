@@ -71,8 +71,10 @@ Since no items are required (`need1 = need2 = 0`), we buy nothing and pay 0.
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
-| **Memory** | `N/A` | - |
+| **Runtime** | `1
+ms` | - |
+| **Memory** | `42.14
+MB` | - |
 
 ---
 
