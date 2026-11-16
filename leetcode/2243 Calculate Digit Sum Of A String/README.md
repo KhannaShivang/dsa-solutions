@@ -65,7 +65,7 @@ s becomes "0" + "0" + "0" = "000", whose length is equal to k, so we return "000
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
+| **Runtime** | `1ms` | - |
 | **Memory** | `N/A` | - |
 
 ---
