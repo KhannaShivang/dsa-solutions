@@ -90,7 +90,7 @@ Consider the string `"abcabc"`:
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
+| **Runtime** | `84ms` | - |
 | **Memory** | `N/A` | - |
 
 ---
