@@ -50,7 +50,7 @@ Explanation: The maximum consecutive elements that we can select is 1.
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `2 ms` | - |
+| **Runtime** | `N/A` | - |
 | **Memory** | `N/A` | - |
 
 ---
