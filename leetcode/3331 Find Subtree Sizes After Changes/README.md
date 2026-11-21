@@ -74,8 +74,10 @@ The following changes will happen at the same time:
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
-| **Memory** | `N/A` | - |
+| **Runtime** | `173
+ms` | - |
+| **Memory** | `238.31
+MB` | - |
 
 ---
 
