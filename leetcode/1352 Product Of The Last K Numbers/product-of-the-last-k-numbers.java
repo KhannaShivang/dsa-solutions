@@ -2,43 +2,24 @@
  * Problem: 1352. Product of the Last K Numbers
  * Difficulty: Medium
  * Language: Java
- * Runtime: N/A
+ * Runtime: 15ms
  * Memory: N/A
  * LeetCode: https://leetcode.com/problems/product-of-the-last-k-numbers/
  */
 
-class ProductOfNumbers {
-    List<Integer>products;
-    int lastZero;
-    public ProductOfNumbers() {
-        products=new ArrayList<>();
-        lastZero=-1;
-    }
-    
-    public void add(int num) {
-        int l=products.size();
-        if(num!=0){
-            if(l==0)products.add(num);
-            else products.add(num*products.get(l-1));
-        }
-        else{
-            lastZero=l;
-            products.add(1);
-        }
-    }
-    
-    public int getProduct(int k) {
-        int l=products.size();
-        int last=l-k-1;
-        if(lastZero>last)return 0;
-        if(last==-1)return products.get(l-1);
-        return products.get(l-1)/products.get(last);
-    }
-}
-
-/**
- * Your ProductOfNumbers object will be instantiated and called as such:
- * ProductOfNumbers obj = new ProductOfNumbers();
- * obj.add(num);
- * int param_2 = obj.getProduct(k);
- */
+["ProductOfNumbers", "add", "add", "add", "add", "getProduct", "add", "add", "add", "add", "add", "getProduct", "add", "getProduct", "add", "getProduct", "getProduct", "add", "add", "add", "add"]
+[[], [2], [2], [5], [10], [2], [0], [5], [0], [2], [3], [3], [10], [4], [7], [2], [1], [8], [2], [6], [5]]
+["ProductOfNumbers", "add", "add", "add", "add", "add", "getProduct", "add", "add", "getProduct"]
+[[], [1], [1], [0], [5], [4], [1], [1], [0], [3]]
+["ProductOfNumbers", "add", "add", "add", "add", "add", "getProduct"]
+[[], [9], [4], [10], [5], [0], [1]]
+["ProductOfNumbers", "add", "add", "add", "add", "getProduct", "getProduct", "add", "getProduct", "getProduct", "add", "add", "add", "add", "add", "getProduct", "getProduct", "add", "getProduct"]
+[[], [2], [7], [10], [9], [3], [1], [5], [1], [1], [6], [10], [9], [2], [9], [2], [4], [1], [3]]
+["ProductOfNumbers", "add", "add", "add", "add", "getProduct", "getProduct"]
+[[], [7], [8], [0], [1], [1], [2]]
+["ProductOfNumbers", "add", "add", "add", "add", "add", "add", "getProduct", "getProduct", "getProduct", "add", "getProduct"]
+[[], [8], [2], [7], [7], [3], [7], [4], [4], [4], [0], [2]]
+["ProductOfNumbers", "add", "add", "add", "add", "getProduct", "add", "getProduct", "add", "add", "add", "getProduct", "add", "getProduct", "add", "getProduct", "add", "getProduct", "getProduct", "getProduct", "getProduct"]
+[[], [3], [7], [3], [6], [2], [0], [3], [3], [4], [7], [3], [3], [3], [8], [3], [8], [4], [2], [4], [4]]
+["ProductOfNumbers", "add", "add", "add", "add", "add"]
+[[], [0], [6], [7], [5], [5]]
