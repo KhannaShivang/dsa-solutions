@@ -69,7 +69,7 @@ productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers 
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
+| **Runtime** | `15ms` | - |
 | **Memory** | `N/A` | - |
 
 ---
