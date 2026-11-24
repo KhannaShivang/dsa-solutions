@@ -63,8 +63,10 @@ The longest product equivalent subarray is `[3, 4, 5].`
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
-| **Memory** | `N/A` | - |
+| **Runtime** | `2
+ms` | - |
+| **Memory** | `43.65
+MB` | - |
 
 ---
 
