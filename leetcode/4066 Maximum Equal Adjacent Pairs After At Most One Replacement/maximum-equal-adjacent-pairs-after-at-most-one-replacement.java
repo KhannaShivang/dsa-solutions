@@ -15,9 +15,14 @@ class Solution {
         for(int i=0;i<n-1;i++){
             if(nums[i]==nums[i+1])count++;
             else{
-                long key = nums[i]*(long)1e9+nums[i+1];
-                map.put(key,map.getOrDefault(key,0)+1);
-                key = nums[i+1]*(long)1e9+nums[i];
+                int a=nums[i];
+                int b=nums[i+1];
+                if(a>b){
+                    a=a^b;
+                    b=a^b;
+                    a=a^b;
+                }
+                long key = a*(long)1e9+b;
                 map.put(key,map.getOrDefault(key,0)+1);
             }
         }
