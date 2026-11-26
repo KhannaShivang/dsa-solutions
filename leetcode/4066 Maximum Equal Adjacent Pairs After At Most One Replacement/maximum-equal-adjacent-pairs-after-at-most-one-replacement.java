@@ -22,7 +22,7 @@ class Solution {
                     b=a^b;
                     a=a^b;
                 }
-                long key = a<<32|b;
+                long key =a*(long)1e9+b;
                 map.put(key,map.getOrDefault(key,0)+1);
             }
         }
