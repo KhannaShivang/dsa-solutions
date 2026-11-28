@@ -77,7 +77,7 @@ Return the **maximum total number of item copies** you can obtain, including bot
 | Metric | Result | Percentile |
 | :--- | :--- | :--- |
 | **Language** | `Java` | - |
-| **Runtime** | `N/A` | - |
+| **Runtime** | `1 ms` | - |
 | **Memory** | `N/A` | - |
 
 ---
